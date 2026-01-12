@@ -1,0 +1,58 @@
+/* making sure sidebar and main content fill available space */
+.page {
+  padding: 24px 0 48px;
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+}
+
+/*basic reset to prevent weird default spacing*/
+* {box-sizing: border-box; }
+html, body {margin: 0; padding: 0; }
+
+
+/* helper container (keeps content centered) */
+.container{
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+ 
+.layout {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+/* when sidebar is hidden, content spans full width */
+.layout.no-sidebar {
+  grid-template-columns: 1fr;
+}
+
+.grid-3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+
+  align-items: stretch; /* IMPORTANT */
+}
+/* main content area */
+.main{
+  display: grid;
+  gap: 18px;
+}
+
+/* a 2-column section inside main content */
+.two-col{
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 14px;
+}
+/* =========================================================
+   Responsive: stack sidebar above content on small screens
+   ========================================================= */
+@media (max-width: 900px){
+  .layout{ grid-template-columns: 1fr; }
+  .sidebar-slot{ position: static; }
+  .grid{ grid-template-columns: 1fr; }
+  .two-col{ grid-template-columns: 1fr; }
+}

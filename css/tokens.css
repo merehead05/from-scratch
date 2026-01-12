@@ -1,13 +1,13 @@
 /* all root veriable values here */
 :root{
-  --bg:
-  --surface:
+  --bg:      /*background*/
+  --surface:    /*card or element etc*/
   --surface-2:
   --surface-glass:
   --surface-light:
   --surface-dark:
-  --text:
-  --text-title: 
+  --text:            /*main text*/
+  --text-title:       
   --text-body:
   --text-accent:
   --text-muted: 

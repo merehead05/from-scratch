@@ -1,2 +1,5 @@
 /* loading all stylesheets here */
 @import url("./css/layout.css")
+@import url("./css/tokens.css")
+@import url("./css/typography.css")
+@import url("./css/3card-row.css")

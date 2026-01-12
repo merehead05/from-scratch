@@ -1,0 +1,21 @@
+.cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  overflow: visible;
+}
+
+.card-slot {
+  min-height: 220px;
+  overflow: visible;
+}
+
+/* NEW: wrapper fills the slot */
+.card-slot > .card-wrap {
+  height: 100%;
+}
+
+/* NEW: card fills the wrapper */
+.card-slot > .card-wrap > .card {
+  height: 100%;
+}

@@ -1,0 +1,41 @@
+/* all root veriable values here */
+:root{
+  --bg:
+  --surface:
+  --surface-2:
+  --surface-glass:
+  --surface-light:
+  --surface-dark:
+  --text:
+  --text-title: 
+  --text-body:
+  --text-accent:
+  --text-muted: 
+  --border:
+  --radius: 16px;
+  --shadow: 0 14px 34px rgba(0,0,0,.35);
+
+/*interactions*/
+  --int-fg:
+  --int-bg:
+  --int-bg-hover:
+  --int-bg-active:
+  --int-border:
+  --int-border-hover:
+  --int-border-active:
+/* focus ring (keyboard accessibility) */
+  --focus-ring: 0 0 0 3px rgba(110,168,255,.18);
+  --focus-border: rgba(110,168,255,.55);
+/*accent driven states*/
+  --accent-soft:
+  --accent-softer:
+  --accent-strong:
+  --accent-intense: 
+/*motion*/
+  --ease: cubic-bezier(.2,.8,.2,1);
+  --dur-1: 120ms;
+  --dur-2: 180ms;
+/*disabled*/
+  --disabled-opacity: .55;
+  --disabled-cursor: not-allowed;
+}

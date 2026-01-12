@@ -1,0 +1,9 @@
+/*default*/
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: radial-gradient(1200px 700px at 20% 10%, rgba(110,168,255,.18), transparent 60%),
+              radial-gradient(900px 600px at 80% 20%, rgba(170,110,255,.14), transparent 60%),
+              var(--bg);
+  line-height: 1.5;
+}
